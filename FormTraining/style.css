@@ -64,3 +64,8 @@ input[type=submit] {
 input:required:invalid {
     border: 1px solid red;
 }
+
+.Label {
+    display: inline-block;
+    width: 125px;
+}

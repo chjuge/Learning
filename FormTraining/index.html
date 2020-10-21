@@ -23,14 +23,14 @@
         <fieldset>
             <legend>Персональная информация</legend>
             <label for="age">Возраст <em>*</em></label>
-            <input id="age" placeholder="33"><br>
+            <input id="age" placeholder="33" min="18" max="100"><br>
             <label for="gender">Пол <em>*</em></label>
             <select id="gender">
                 <option value="female">Женщина</option>
                 <option value="male">Мужчина</option>
             </select><br>
             <label for="comments">Перечислите личные качества</label>
-            <textarea id="comments" oninput="validateComments(this)"></textarea>
+            <textarea id="comments" oninput="validateComments(this)" spellcheck="false"></textarea>
         </fieldset>
         <fieldset>
             <legend>Выберите выших любимых животных</legend>
@@ -43,8 +43,39 @@
             <label for="pigeon"><input type="checkbox" id="pigeon">Голубь</label>
             <label for="crab"><input type="checkbox" id="crab">Краб</label>
         </fieldset>
+        <fieldset>
+            <legend>Выберите любимый цвет</legend>
+            <label for="mycolor">Цвет</label>
+            <input type="color" id="mycolor"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Выберите любимый фрукт</legend>
+            <label for="fruit">Фрукт</label>
+            <input id="fruit" list="dl_fruits">
+            <datalist id="dl_fruits">
+                <span class="Label">Выберите из списка:</span>
+                <select id="favoriteFruite">
+                    <option value="apple" label="Яблоко"></option>
+                    <option value="ananas" label="Ананас"></option>
+                    <option value="apricot" label="Абрикос"></option>
+                    <option value="waterlemon" label="Арбуз"></option>
+                    <option label="Авокадо" value="avocado"></option>
+                    <option value="Orange" label="Апельсин"></option>
+                </select>
+                <br>
+                <span class="Label">Или введите вручную:</span>
+            </datalist>
+        </fieldset>
         <p><input type="submit" value="Отправить информацию"></p>
     </form>
+    <progress value=0.25></progress>
+    <progress value="50" max="100"></progress>
+    <progress>Рассчёт выполняется</progress><br>
+    Ваш багаж весит: <meter value="28" min="5" max="70">28 килограмм</meter><br>
+    Ваш багаж весит: <meter min="5" max="100" high="70" value="79">79 килограмм</meter>*
+    <p><small>* За багаж весом больше 70 кг нужно доплатить.</small></p>
+    <p>Нашей целью является собрать 50,000 рублей</p>
+    <p>Всего мы собрали 14,000 руб. <meter max="50000" value="14000"></meter></p>
 </body>
 
 </html>
