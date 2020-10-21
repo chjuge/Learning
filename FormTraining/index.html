@@ -5,6 +5,7 @@
 <head>
     <title> Форма</title>
     <link rel="stylesheet" href="style.css">
+    <script src="validate.js"></script>
 </head>
 
 <body>
@@ -13,30 +14,30 @@
         <fieldset>
             <legend>Контактная информация</legend>
             <label for="name">Имя <em>*</em></label>
-            <input id="name"><br>
+            <input id="name" placeholder="Иван Иванов" autofocus required><br>
             <label for="telephone">Телефон </label>
-            <input id="telephone"><br>
+            <input id="telephone" placeholder="8 (9хх)ххх-хх-хх"><br>
             <label for="email">Email <em>*</em></label>
-            <input id="email"><br>
+            <input id="email" required pattern="\S+@[a-z]+.[a-z]+"><br>
         </fieldset>
         <fieldset>
             <legend>Персональная информация</legend>
             <label for="age">Возраст <em>*</em></label>
-            <input id="age"><br>
+            <input id="age" placeholder="33"><br>
             <label for="gender">Пол <em>*</em></label>
             <select id="gender">
                 <option value="female">Женщина</option>
                 <option value="male">Мужчина</option>
             </select><br>
             <label for="comments">Перечислите личные качества</label>
-            <textarea id="comments"></textarea>
+            <textarea id="comments" oninput="validateComments(this)"></textarea>
         </fieldset>
         <fieldset>
             <legend>Выберите выших любимых животных</legend>
             <label for="zebra"> <input id="zebra" type="checkbox"> Зебра </label>
             <label for="cat"> <input id="cat" type="checkbox"> Кошка</label>
             <label for="anaconda"> <input type="checkbox" id="anaconda">Анаконда</label>
-            <label for="human"><input type="checkbox" id="human">Долбоёб?</label>
+            <label for="human"><input type="checkbox" id="human">Человек</label>
             <label for="elephant"><input type="checkbox" id="elephant">Слон</label>
             <label for="wildebeest"><input type="checkbox" id="wildebeest">Антилопа</label>
             <label for="pigeon"><input type="checkbox" id="pigeon">Голубь</label>

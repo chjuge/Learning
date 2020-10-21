@@ -60,3 +60,7 @@ input[type=submit] {
     width: 170px;
     padding: 10px;
 }
+
+input:required:invalid {
+    border: 1px solid red;
+}
