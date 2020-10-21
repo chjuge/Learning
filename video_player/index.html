@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Video player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>Тестовый просмотр</h1>
+    <video id="videoPlayer" width="600" height="400" onTimeUpdate="progressUpdate()">
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    <div class="barContainer">
+        <div id="durationBar">
+            <div id="positionBar"><span id="displayStatus">1</span></div>
+        </div>
+    </div>
+    <div>
+        <button onclick="play()">Play</button>
+        <button onclick="pause()">Pause</button>
+        <button onclick="stop()">Stop</button>
+        <button onclick="speedUp()">Быстрее</button>
+        <button onclick="slowDown()">Медленнее</button>
+        <button onclick="normalSpeed()">Нормальная скорость</button>
+    </div>
+</body>
+
+</html>
