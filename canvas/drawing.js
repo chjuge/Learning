@@ -51,4 +51,5 @@ window.onload = function () {
     context.beginPath();
     context.arc(75, 75, 50, 0, 2 * Math.PI);
     context.stroke();
+    //Не рисуется. Хотя если делать отдельно, то всё нормально. WTF
 }
