@@ -83,6 +83,7 @@ function drawFrame() {
     setTimeout("drawFrame()", 20);
 }
 
+//Функция взаимодействия с мячиком по нажатию по нему ЛКМ
 function canvasClick(e) {
     //координаты щелчка мыши
     let clickX = e.pageX - canvas.offsetLeft;
