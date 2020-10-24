@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Storage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Веб-хранилище</legend>
+        <label for="localData">Этот текст сохранится в локальном хранилище:</label>
+        <input id="localData"><br>
+        <label for="sessionData">Этот текст сохранится в хранилище данных сессии:</label>
+        <input id="sessionData">
+    </fieldset>
+    <div>
+        <button onclick="saveData()">Сохранить</button>
+        <button onclick="loadData()">Загрузить</button>
+    </div>
+</body>
+
+</html>
