@@ -1,0 +1,40 @@
+#flexContainer {
+display: flex;
+flex-direction: row;
+border: 5px solid black;
+width: 800px;
+height: 400px;
+
+}
+
+.column {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+img {
+    width: 330px;
+    border: black 3px double;
+}
+
+#ulContainer {
+    overflow: auto;
+}
+ 
+ul {
+    border: black 3px double;
+}
+
+p {
+    font-weight: bold;
+    font-size: 1.60em;
+    text-align: center;
+    border: black 3px double;
+}
+
+button {
+    margin: 2px;
+    width: 165px;
+}
